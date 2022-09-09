@@ -28,9 +28,9 @@ public with sharing class CTPersonController {
     //method to get the person__c record from an Id. 
     public static Person__c getPersonById(String personId)
     {
-        lIST<Person__c> people = [SELECT Id, Name, Status_Update_Date__c, Health_Status__c,  Mobile__c, Token__c 
+        List<Person__c> people = [SELECT Id, Name, Status_Update_Date__c, Health_Status__c,  Mobile__c, Token__c 
                                     FROM  Person__c WHERE Id =:personId];
-            if (people!= null && People.size()>0)
+            if(people!= null && people.size()>0)
             {
                 return people[0];
             }
