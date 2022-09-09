@@ -8,4 +8,5 @@ public with sharing class CTPersonController {
         //get the string value of the hash block
         return EncodingUtil.base64Encode(hash);
     }
+    
 }
