@@ -6,7 +6,7 @@ public with sharing class CTPersonController {
         Blob hash = Crypto.generateDigest('MD5',value);
 
         //get the string value of the hash block
-        return EncodingUtil.base64Encode(hash);
+        return EncodingUtil.base64Encode(hash);;
     }
     
 }
